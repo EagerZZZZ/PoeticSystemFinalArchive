@@ -1,0 +1,317 @@
+/* @font-face {
+    font-family: font_en_regular;
+    src: url(./font/FreightDispBook.ttf);
+ } */
+
+ /* @font-face {
+    font-family: font_en_bold;
+    src: url(./font/FreightDispBook.ttf);
+ } */
+
+ @font-face {
+    font-family: font_en_italic;
+    src: url(./font/XanhMono-Italic.ttf);
+ }
+
+
+
+ 
+
+ 
+ * {
+     cursor: default;
+
+    background-color: #eaeaea;
+ }
+
+ .main_body{
+    margin: 15px;
+    
+ }
+
+ .class_title{
+   z-index: 2000;
+   grid-template-columns: 1fr 1fr;
+   display: grid;
+   /* border: 2px solid #000000; */
+   
+   font-family: 'Work Sans', sans-serif;
+   font-size: 1em;
+   letter-spacing: -0.01em;
+   background-color: #eaeaea;
+
+  
+ }
+
+.top_banner{
+   border: 2px solid black;
+   height: 700px;
+   font-family: 'Work Sans', sans-serif;
+}
+
+
+.cover_image{
+   margin-top: 2%;
+   margin-left: 10%;
+   margin-bottom: 3%;
+   width: 80%;
+   display: none;
+}
+
+ .bottom_square{
+    z-index: 2;
+    background-color:white;
+    left: 0%;
+    right: 0%;
+   height: 50px;
+   position: fixed;
+   bottom: 0px;
+   
+ }
+
+
+ .nav_bottom{
+
+     
+     font-family: 'Work Sans', sans-serif;
+     letter-spacing: -0.01em;
+     display: inline;
+     font-size: 1.3em;
+    
+     
+ }
+
+
+ .button_writings{
+    background-color: white;
+    z-index: 1000;
+    color: black;
+     position:fixed;
+     margin-left: 1em;
+     bottom: 20px;
+   
+     left: 0%;
+     
+ }
+
+ .button_writings:hover{
+     cursor: pointer;
+
+
+ }
+
+ .button_digital{
+    background-color: white;
+    z-index: 1000;
+    color: black;
+     position:fixed;
+     margin-left: 1em;
+     bottom: 20px;
+     left: 30%;
+
+ }
+
+.button_digital:hover{
+    cursor: pointer;
+
+
+}
+
+ .button_other{
+    background-color: white;
+    z-index: 1000;
+    color: black;
+     position:fixed;
+     margin-left: 1em;
+     bottom: 20px;
+     left: 60%;
+
+ }
+
+ .button_other:hover{
+     cursor: pointer;
+ 
+ }
+
+
+ .button_about{
+    background-color: white;
+    z-index: 1000;
+    color: black;
+     position:fixed;
+     margin-left: 1em;
+     bottom: 20px;
+     right: 30px;
+  
+ }
+
+ .button_about:hover{
+     cursor: pointer;
+
+ }
+ 
+
+ .button_top{
+    z-index: 1000;
+    color: white;
+    background-color: blue;
+     position:fixed;
+     float: right;
+     top: 30px;
+    
+     right: 30px;
+ }
+
+ .button_top:hover{
+    cursor: pointer;
+ }
+
+ 
+
+ .intro{
+     z-index: 1;
+     position: relative;
+
+     font-family: 'Work Sans', sans-serif;
+     letter-spacing: 0.03em;
+     font-size: 2.8em;
+     line-height: 1.1em;
+     
+ }
+
+
+ .preface_text{
+    font-family: font_en_italic;
+     font-size: 1.5em;
+     letter-spacing: 0.03em;
+ }
+
+ .keyword{
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    
+    display: inline;
+    background-image: linear-gradient( rgb(200, 255, 0), #eaeaea);
+     
+     
+
+ }
+ 
+ .keyword:hover{
+    
+    
+     cursor: pointer;
+ }
+
+
+ .superscript{
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+   font-size: 0.4em;
+    vertical-align: text-top;
+ }
+
+
+
+ .hidden{
+    font-family: font_en_italic;
+    display: inline;
+    background-color: #eaeaea;
+ }
+
+ .big_title{
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.0em;
+    
+    letter-spacing: 0.03em;
+    color: black;
+    
+    display: inline;
+    background-image: linear-gradient(  rgb(200, 255, 0), #eaeaea);
+    
+
+ }
+
+
+
+
+
+ @media only screen and (max-width: 800px){
+
+    .bottom_square{
+ 
+        height: 53px;
+       
+        
+      }
+
+    .nav_bottom{
+
+ 
+        
+      font-size: 1.1em;
+        
+        
+        
+        }
+
+
+
+ }
+
+
+ @media only screen and (max-width: 650px){
+
+
+ .button_writings{
+    bottom: 95px;
+    left: 0%;
+ }
+
+ .button_digital{
+    bottom: 70px;
+    left: 0%;
+}
+
+.button_other{
+    bottom:45px;
+    left: 0%;
+}
+
+.button_about{
+    bottom: 20px;
+    left: 0%;
+}
+
+.bottom_square{
+ 
+   height: 130px;
+  
+   
+ }
+
+ .intro{
+        
+    font-size: 2.5em;
+    line-height: 0.95em;
+    
+
+
+}
+
+
+.nav_bottom{
+
+ 
+        
+   font-size: 1.1em;
+     
+     
+     
+     }
+
+ }
+
