@@ -20,12 +20,13 @@
  
  * {
      cursor: default;
+     background-color: #eaeaea;
 
-    background-color: #eaeaea;
  }
 
  .main_body{
     margin: 15px;
+  
     
  }
 
@@ -36,61 +37,82 @@
    /* border: 2px solid #000000; */
    
    font-family: 'Work Sans', sans-serif;
-   font-size: 1em;
+   
    letter-spacing: -0.01em;
-   background-color: #eaeaea;
+
 
   
  }
 
 .top_banner{
-   border: 2px solid black;
-   height: 700px;
+z-index: 5000;
+   height: 400px;
+  top: 10px;
+   position: fixed;
+   display: inline;
+   mix-blend-mode: multiply;
+   background: transparent;
+   
+}
+
+.aphorism{
+   width: 70%;
+   font-size: 7em;
+   line-height: 0,8em;
+   background: transparent;
+   text-decoration: underline;
+   display: inline;
    font-family: 'Work Sans', sans-serif;
+  
+}
+.aphorism:hover{
+   font-family: font_en_italic;
+
+  
+}
+
+.overlay{
+   width: 100%;
+   font-size: 7em;
+   line-height: 0,8em;
+   background: transparent;
+   text-decoration: underline;
+   display: inline;
+   font-family: 'Work Sans', sans-serif;
+  
 }
 
 
-.cover_image{
-   margin-top: 2%;
-   margin-left: 10%;
-   margin-bottom: 3%;
-   width: 80%;
-   display: none;
+.intro{
+   position: relative;
+   margin-top: 500px;
 }
 
- .bottom_square{
+ .nav_bottom{
     z-index: 2;
-    background-color:white;
+    background-color:black;
     left: 0%;
     right: 0%;
-   height: 50px;
+   height: 35px;
    position: fixed;
    bottom: 0px;
    
  }
 
 
- .nav_bottom{
 
-     
-     font-family: 'Work Sans', sans-serif;
-     letter-spacing: -0.01em;
-     display: inline;
-     font-size: 1.3em;
+
+ .marquee{
     
-     
- }
-
-
- .button_writings{
-    background-color: white;
     z-index: 1000;
-    color: black;
+    color: #eaeaea;
+    background: black;
+    background-image: linear-gradient( #000000, #000000);
      position:fixed;
      margin-left: 1em;
-     bottom: 20px;
-   
+     bottom: 10px;
      left: 0%;
+     font-family: 'Work Sans', sans-serif;
      
  }
 
@@ -171,7 +193,7 @@
  .intro{
      z-index: 1;
      position: relative;
-
+   
      font-family: 'Work Sans', sans-serif;
      letter-spacing: 0.03em;
      font-size: 2.8em;
@@ -192,7 +214,9 @@
     
     display: inline;
     background-image: linear-gradient( rgb(200, 255, 0), #eaeaea);
-     
+
+    
+    
      
 
  }
@@ -201,7 +225,9 @@
     
     
      cursor: pointer;
+   
  }
+
 
 
  .superscript{
@@ -217,6 +243,7 @@
     font-family: font_en_italic;
     display: inline;
     background-color: #eaeaea;
+    color: black;
  }
 
  .big_title{
@@ -239,7 +266,24 @@
 
 
 
- @media only screen and (max-width: 800px){
+ @media only screen and (max-width: 1050px){
+
+    
+
+   .aphorism{
+  
+      font-size: 5.5em;
+  
+     
+   }
+
+   .overlay{
+  
+      font-size: 5.5em;
+
+     
+   }
+   
 
     .bottom_square{
  
@@ -258,6 +302,12 @@
         
         }
 
+        .intro{
+         position: relative;
+         margin-top: 400px;
+      }
+      
+
 
 
  }
@@ -266,33 +316,7 @@
  @media only screen and (max-width: 650px){
 
 
- .button_writings{
-    bottom: 95px;
-    left: 0%;
- }
-
- .button_digital{
-    bottom: 70px;
-    left: 0%;
-}
-
-.button_other{
-    bottom:45px;
-    left: 0%;
-}
-
-.button_about{
-    bottom: 20px;
-    left: 0%;
-}
-
-.bottom_square{
  
-   height: 130px;
-  
-   
- }
-
  .intro{
         
     font-size: 2.5em;
@@ -301,17 +325,40 @@
 
 
 }
+.top_banner{
+height: 100px;
+}
+
+.aphorism{
+   width: 70%;
+   font-size: 3.5em;
+
+  
+}
+.aphorism:hover{
+   font-family: font_en_italic;
+
+  
+}
+
+.overlay{
+   width: 100%;
+   font-size: 3.5em;
+
+   background: transparent;
+   text-decoration: underline;
+   display: inline;
+   font-family: 'Work Sans', sans-serif;
+  
+}
 
 
-.nav_bottom{
+.intro{
+   position: relative;
+   margin-top: 300px;
+}
 
- 
-        
-   font-size: 1.1em;
-     
-     
-     
-     }
+
 
  }
 

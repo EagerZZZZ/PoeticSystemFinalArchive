@@ -24,7 +24,7 @@
                 clearInterval(timer);
             }
         },
-        12); //这个是用来控制速度的，数值越小打字机越快
+        9); //这个是用来控制速度的，数值越小打字机越快
     };
     
     
@@ -276,12 +276,14 @@
         $("#hidden8").css("font-size", "94%");
         $('#superscript8').css("opacity", "0");
         $('#cover_image8').css("display", "block");
+        
         }, function(){
         $("#keyword8").css("font-family", "'Work Sans', sans-serif");
         $("#keyword8").css("font-size", "100%");
         $('#hidden8').css("display", "none");
         $('#superscript8').css("opacity", "1");
         $('#cover_image8').css("display", "none");
+        
     });
 
     $('#superscript8').hover(function(){
